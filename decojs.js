@@ -1,5 +1,5 @@
 //css du pied de page
-document.getElementById("footer").style.background = "#2298fd";
+// document.getElementById("footer").style.background = "#2298fd";
 document.getElementById("footer").style.width = "100%";
 document.getElementById("footer").style.height = "100px";
 //css des deux section
