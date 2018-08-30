@@ -135,4 +135,11 @@ function suivant() {
         alert("bonjour")
     }
 }
-//css du pied de page
+
+
+//code vue js
+Vue.component('blog-post', {
+    // camelCase en JavaScript
+    props: ['postTitle'],
+    template: '<h3>{{ postTitle }}</h3>'
+})
