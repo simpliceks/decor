@@ -25,7 +25,7 @@ document.getElementById("article").style.cssFloat = "right"
     //css de l'en-tete
 document.getElementById("nav").style.height = "30%";
 document.getElementById("nav").style.width = "100%";
-document.getElementById("nav").style.background = "#2aa5a9";
+document.getElementById("nav").style.background = "#aaa5a9";
 document.getElementById("nav").style.cssFloat = "low";
 document.getElementById("nav").style.textAlign = "center";
 
