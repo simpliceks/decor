@@ -9,6 +9,7 @@
             background-color: brown;
         }
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 
 
@@ -70,15 +71,20 @@
 
             <input type="button" value="click ici " onclick="suivant(); test(); ">
 
-
+            <blog-post postTitle="Hello !">test</blog-post>
 
         </div>
         <div id="aside">
-            <script>
-                let nom = prompt("entre votre nom");
-                confirm(`c est bien votre nom  ici: ${nom}`);
-            </script>
             les information du site ici
+            <blog-post v-bind:comment-ids="[234, 266, 273]"></blog-post>
+            <blog-post></blog-post>
+            <ul>
+                <li v-for="todo in todos">
+                    {{ todo.text }}
+                </li>
+            </ul>
+
+
         </div>
     </div>
     <div id="footer">

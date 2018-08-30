@@ -142,4 +142,32 @@ Vue.component('blog-post', {
     // camelCase en JavaScript
     props: ['postTitle'],
     template: '<h3>{{ postTitle }}</h3>'
-})
+});
+
+var app4 = new Vue({
+    el: '#aside',
+    data: {
+        todos: [
+            { text: 'Apprendre JavaScript' },
+            { text: 'Apprendre Vue' },
+            { text: 'Créer quelque chose de génial' }
+        ]
+    }
+});
+
+Vue.component('base-checkbox', {
+    model: {
+        prop: 'checked',
+        event: 'change'
+    },
+    props: {
+        checked: Boolean
+    },
+    template: `
+      <input
+        type="checkbox"
+        v-bind:checked="checked"
+        v-on:change="$emit('change', $event.target.checked)"
+      >
+    `
+});
