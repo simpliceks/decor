@@ -135,4 +135,19 @@ function suivant() {
         alert("bonjour")
     }
 }
-//css du pied de page
+
+//code de vue js
+new vue({
+    el: '#aside',
+    data: {
+        message: 'salut le monnde',
+        link: '#',
+        success: true,
+        personne: ['jean', 'paul', 'cyrill', 'claude']
+    },
+    methods: {
+        close: function() {
+            this.success = false
+        }
+    }
+})

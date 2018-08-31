@@ -9,6 +9,7 @@
             background-color: brown;
         }
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 
 
@@ -79,6 +80,9 @@
                 // confirm(`c est bien votre nom  ici: ${nom}`);
             </script>
             les information du site ici
+            <ul>
+                <li v-for=" per in personne "> {{ per }} </li>
+            </ul>
         </div>
     </div>
     <div id="footer">
